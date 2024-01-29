@@ -4,4 +4,4 @@ Implementation of the popular TodoMVC demo app using [Wörterbuch](https://githu
 
 ## How to run
 
-Clone and `cd` into the repository root directory, then run `npm i && npm start`.
+Start an instance of Wörterbuch on your local machine with the websocket endpoint listening at port 8080 (the default setting), then clone and `cd` into the repository root directory, then run `npm i && npm start`.
