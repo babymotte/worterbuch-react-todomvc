@@ -1,25 +1,15 @@
 import React from "react";
 import { render } from "react-dom";
 import { HashRouter, Route, Routes } from "react-router-dom";
-
-import { App } from "./todo/app";
 import "todomvc-app-css/index.css";
-import { Worterbuch } from "worterbuch-react";
+import "react-tooltip/dist/react-tooltip.css";
+import Splash from "./todo/splash";
 
 render(
-  <Worterbuch
-    config={{
-      backendScheme: "ws",
-      backendHost: "localhost",
-      backendPort: 8080,
-      backendPath: "/ws",
-    }}
-  >
-    <HashRouter>
-      <Routes>
-        <Route path="*" element={<App />} />
-      </Routes>
-    </HashRouter>
-  </Worterbuch>,
+  <HashRouter>
+    <Routes>
+      <Route path="*" element={<Splash />} />
+    </Routes>
+  </HashRouter>,
   document.getElementById("root")
 );
